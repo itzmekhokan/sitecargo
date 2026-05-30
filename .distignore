@@ -16,3 +16,4 @@
 /phpcs.xml.dist
 /.phpunit.result.cache
 /README.md
+.DS_Store
