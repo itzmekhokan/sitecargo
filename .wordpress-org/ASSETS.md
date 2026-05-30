@@ -29,15 +29,26 @@ cd .wordpress-org
 for s in 256 128; do qlmanage -t -s $s -o . icon.svg && mv icon.svg.png icon-${s}x${s}.png; done
 ```
 
-## Banner (header image on the listing page)
+## Banner — DONE ✅
 
 | File | Size | Notes |
 |---|---|---|
-| `banner-772x250.png` | 772 × 250 | Standard banner. |
+| `banner.svg` | vector | Master (viewBox 1544×500). |
 | `banner-1544x500.png` | 1544 × 500 | Retina banner. |
+| `banner-772x250.png` | 772 × 250 | Standard banner. |
 
-Keep text minimal — the plugin name plus a one-line tagline at most. WP.org
-overlays the plugin title, so avoid putting large text where it will collide.
+Crate mark + "Crate" wordmark (amber accent underline) + tagline + an
+entity-type subline, on the same blue gradient as the icon. Verified legible
+at 772px.
+
+Re-rasterize after editing `banner.svg` (macOS; qlmanage pads to a square, so
+crop back to the exact size):
+
+```bash
+cd .wordpress-org
+qlmanage -t -s 1544 -o . banner.svg && mv banner.svg.png banner-1544x500.png && sips -c 500 1544 banner-1544x500.png
+qlmanage -t -s 772  -o . banner.svg && mv banner.svg.png banner-772x250.png  && sips -c 250 772  banner-772x250.png
+```
 
 ## Screenshots (optional but recommended)
 

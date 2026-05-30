@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1544 500" role="img" aria-label="Crate — selectively promote FSE structure between environments">
+  <title>Crate</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5470FF"/>
+      <stop offset="1" stop-color="#2240CF"/>
+    </linearGradient>
+    <linearGradient id="arrow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD15C"/>
+      <stop offset="1" stop-color="#FFB100"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.18" cy="0.2" r="0.8">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1544" height="500" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1544" height="500" fill="url(#glow)"/>
+
+  <!-- Crate mark (reused from the icon, sans badge) -->
+  <g transform="translate(-12,73) scale(1.5)">
+    <polygon points="128,22 166,64 142,64 142,96 114,96 114,64 90,64" fill="url(#arrow)"/>
+    <g stroke="#2240CF" stroke-width="3" stroke-linejoin="round">
+      <polygon points="128,92 184,124 128,156 72,124" fill="#FFFFFF"/>
+      <polygon points="72,124 128,156 128,214 72,182" fill="#D7DEFF"/>
+      <polygon points="184,124 128,156 128,214 184,182" fill="#B4C2FF"/>
+    </g>
+    <g stroke="#2240CF" stroke-width="3" stroke-linecap="round" opacity="0.5" fill="none">
+      <line x1="78" y1="130" x2="122" y2="205"/>
+      <line x1="178" y1="130" x2="134" y2="205"/>
+    </g>
+  </g>
+
+  <!-- Wordmark + tagline -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+    <text x="322" y="232" font-size="138" font-weight="800" fill="#FFFFFF" letter-spacing="-2">Crate</text>
+    <rect x="326" y="262" width="86" height="7" rx="3.5" fill="url(#arrow)"/>
+    <text x="324" y="330" font-size="40" font-weight="500" fill="#CFD8FF">Selectively promote FSE structure between environments</text>
+    <text x="324" y="386" font-size="30" font-weight="500" fill="#9FB0F5">Patterns &#183; templates &#183; parts &#183; global styles &#183; navigation &#8212; no full DB migration</text>
+  </g>
+</svg>
