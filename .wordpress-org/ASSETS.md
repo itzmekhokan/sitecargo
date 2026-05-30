@@ -8,17 +8,26 @@ GitHub Action). They control how the listing looks at
 
 Drop the final PNG/JPG files in this folder with the exact names below.
 
-## Icon (required for a polished listing)
+## Icon — DONE ✅
 
 | File | Size | Notes |
 |---|---|---|
-| `icon-128x128.png` | 128 × 128 | Shown in search results and the plugin card. |
-| `icon-256x256.png` | 256 × 256 | Retina version of the icon. |
-| `icon.svg` | vector | Optional; if present, WP.org prefers it. |
+| `icon.svg` | vector | Master. WP.org prefers SVG if present. |
+| `icon-256x256.png` | 256 × 256 | Retina raster (rendered from `icon.svg`). |
+| `icon-128x128.png` | 128 × 128 | Search-results / card raster. |
+| `icon-mono.svg` | vector | Single-color variant (favicons, docs, dark UI). |
 
-Concept: a shipping/packing crate (ties to the name) with a subtle "arrow
-moving right" to convey promotion between environments. Keep it legible at
-128px.
+Concept: an isometric shipping crate with corner braces being **promoted
+upward** by an arrow — the staging→production "ship it" metaphor. Blue badge
+(WP-leaning `#4F6BFF→#2847D9`), white/blue crate, amber arrow for pop. Verified
+legible at 128px.
+
+Re-rasterize after editing `icon.svg` (macOS, no extra tools):
+
+```bash
+cd .wordpress-org
+for s in 256 128; do qlmanage -t -s $s -o . icon.svg && mv icon.svg.png icon-${s}x${s}.png; done
+```
 
 ## Banner (header image on the listing page)
 
