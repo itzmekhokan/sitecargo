@@ -4,7 +4,7 @@ Tags: migration, staging, deployment, full-site-editing, block-themes
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 0.1.0-alpha
+Stable tag: 0.1.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -70,7 +70,7 @@ Always run `wp crate diff` first to preview changes, and keep a backup. This is 
 
 == Changelog ==
 
-= 0.1.0-alpha =
+= 0.1.0 =
 * Initial release.
 * Export / diff / apply for patterns, templates, template parts, global styles, and navigation.
 * Stable cross-environment identity, block reference remapping, and content-hash media sideloading.
@@ -78,5 +78,5 @@ Always run `wp crate diff` first to preview changes, and keep a backup. This is 
 
 == Upgrade Notice ==
 
-= 0.1.0-alpha =
-Initial alpha release. Test in a non-production environment.
+= 0.1.0 =
+Initial release. Early software — test in a non-production environment first.

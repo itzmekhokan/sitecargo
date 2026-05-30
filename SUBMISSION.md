@@ -19,9 +19,9 @@ Not shipped in the plugin ZIP (excluded via `.distignore`).
 
 ## 2. Decisions to confirm before submitting
 
-- [ ] **Version / Stable tag.** Currently `0.1.0-alpha`. The Stable tag must
-      match an SVN tag you create after approval. Decide the first public
-      version string (see the question raised during prep).
+- [x] **Version / Stable tag.** Set to `0.1.0` (dropped the `-alpha` suffix for
+      a clean Stable tag; the "early software" caveat stays in the readme FAQ).
+      The Stable tag must match the SVN tag you create after approval.
 - [ ] **Tested up to.** Currently `7.0`. Must be a *released* WP version at
       submission time — confirm it matches the latest stable WordPress.
 - [ ] **Contributor account.** `readme.txt` lists `Contributors: itzmekhokan`.

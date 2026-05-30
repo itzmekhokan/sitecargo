@@ -22,7 +22,7 @@ final class Plugin {
 	/**
 	 * Plugin version. Stamped into every exported bundle's manifest.
 	 */
-	public const VERSION = '0.1.0-alpha';
+	public const VERSION = '0.1.0';
 
 	/**
 	 * Bundle format version. Bump only on incompatible changes to the bundle
